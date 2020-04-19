@@ -4,24 +4,18 @@ title: "Min fina titel"
 Min me-sida i kursen oophp
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=400&a=4,27,11,0&cf&sharpen" class="right" caption="Bild på mig, ätandes glass och hållandes ett kort på någon jultillställning."]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+[FIGURE src="image/jagochsigne.jpg?w=400&a=4,27,11,0&cf&sharpen" class="right" caption="Bild på mig och Signe."]
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+ Mitt namn är Jimmy Hortlund, jag är 39 år gammal och bor på Lidingö. Jag är född och uppvuxen i Jävre som är en liten by ca 2 mil söder om Piteå men pga av familjeskäl bor jag nu, sen början av 2019, på Lidingö nära min 7 åriga dotter och ex-fru och trivs jättebra här.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Under min uppväxt spelade jag en hel del basket, innebandy och fotboll på min fritid, annars hängde man mycket ute och umgicks med kompisar, körde moped på sommaren och skoter på vintern. Jag gillade även att spela tv- och datorspel, Nintendo 8-bitar och Amiga 500 var de maskinerna jag spelade mest på.
+Efter ett tag började jag också utveckla ett väldigt stort intresse för musik, lärde mig spela gitarr och startade kort därefter ett metal-band med min kompis. Vi spelade in en skiva på musikhögskolan i Piteå, där jag praoade, men mycket mer än så blev det inte.
+Jag lyssnade, och lyssnar fortfarande, på väldigt mycket musik, främst hårdrock och metal, några favoritband är tex. Metallica, Guns n Roses, Wasp, Marduk, Dark funeral och Testamen.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
+Under Gymnasiet gick jag VVS programmet och hade tänkt bli rörmokare, inte för att jag var speciellt intresserad av det men mest för att min yrkesvägledare på skolan sa att det kommer finnas massor med jobb innom det yrket. Jag tappade intresset helt för att kröka rör och blev aldrig någon rörmokare, istället började jag jobba som tunnbrödsbagare, då jag behövde ett snabbt jobb, där blev jag kvar några år, sedan fick jag ett jobb på ett bageri/konditori i Piteå som bagare/konditor och där jobbade fram till att jag flyttade till Lidingö nu 2019.
 
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
+Jag har väl aldrig egentligen gillat att baka så, men det var ett jobb som gav pengar och en trygghet, men tillslut kände jag att, nej! nu får det vara nog, jag ska jobba så många år till och då vill jag göra något jag tycker är roligt och utvecklande. Då fanns det två allternativ, Musik eller Datorer, och ser man till jobbmarknade blev det ett lätt val, så nu sitter jag här och ska förhoppningsvis bli en webbprogrammerare och sluta slösa på mitt liv :)
 
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching, sedan turfing och nu på sistone verkar släktforskning lite spännande. Annars kan jag alltid koda på något av mina opensource-projekt, det finns och blir över.
-
-Vill du läsa mer om vad jag jobbat med så kan du kika på min [Linkedin-profil](https://www.linkedin.com/in/pt90mr/).
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Fritidsintressen just nu är film/serier och Classis world of warcraft. 
