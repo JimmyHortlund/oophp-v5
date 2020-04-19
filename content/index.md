@@ -8,7 +8,7 @@ Min me-sida i kursen oophp
 
 [FIGURE src="image/jagochsigne.jpg?w=400&a=4,27,11,0&cf&sharpen" class="right" caption="Bild på mig och Signe."]
 
- Mitt namn är Jimmy Hortlund, jag är 39 år gammal och bor på Lidingö. Jag är född och uppvuxen i Jävre som är en liten by ca 2 mil söder om Piteå men pga av familjeskäl bor jag nu, sen början av 2019, på Lidingö nära min 7 åriga dotter och ex-fru och trivs jättebra här.
+ Mitt namn är Jimmy Hortlund, jag är 40 år gammal och bor på Lidingö. Jag är född och uppvuxen i Jävre som är en liten by ca 2 mil söder om Piteå men pga av familjeskäl bor jag nu, sen början av 2019, på Lidingö nära min 8 åriga dotter och ex-fru och trivs jättebra här.
 
 Under min uppväxt spelade jag en hel del basket, innebandy och fotboll på min fritid, annars hängde man mycket ute och umgicks med kompisar, körde moped på sommaren och skoter på vintern. Jag gillade även att spela tv- och datorspel, Nintendo 8-bitar och Amiga 500 var de maskinerna jag spelade mest på.
 Efter ett tag började jag också utveckla ett väldigt stort intresse för musik, lärde mig spela gitarr och startade kort därefter ett metal-band med min kompis. Vi spelade in en skiva på musikhögskolan i Piteå, där jag praoade, men mycket mer än så blev det inte.

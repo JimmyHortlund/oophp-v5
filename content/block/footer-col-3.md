@@ -1,3 +1,4 @@
-#### Footer col 3
+#### Programming Memes
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Don't forget to have fun.  
+[Memes](https://www.probytes.net/blog/programming-memes-2018/)
