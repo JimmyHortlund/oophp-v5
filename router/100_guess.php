@@ -61,7 +61,7 @@ $app->router->get("guess/play", function () use ($app) {
     $app->page->add("guess/play", $data);
 
     // var_dumps SESSION POST and Get
-    //$app->page->add("guess/debug");
+    $app->page->add("guess/debug");
 
 
     return $app->page->render([
