@@ -18,12 +18,12 @@ class Dice extends DiceHand
      * Constructor to initiate the dice with a number of sides.
      * @param int number of sides to the dice to create, deafault set to six
      */
-    public function __construct($diceSides = 6) 
+    public function __construct($diceSides = 6)
     {
         $this->diceSides = $diceSides;
     }
 
-    public function getDiceSides() 
+    public function getDiceSides()
     {
         return $this->diceSides;
     }
@@ -31,13 +31,13 @@ class Dice extends DiceHand
      * Creates a random number and saves in @var $diceRoll.
      * @return void.
      */
-    public function randomNumber() 
+    public function randomNumber()
     {
         $randNumber = rand(1, $this->diceSides);
-        $this->diceRoll = $randNumber;   
+        $this->diceRoll = $randNumber;
     }
 
-    public function getDiceRoll() 
+    public function getDiceRoll()
     {
         return $this->diceRoll;
     }
@@ -47,7 +47,7 @@ class Dice extends DiceHand
      * and returns the number
      * @return int.
      */
-    public function getRoll() 
+    public function getRoll()
     {
         $this->randomNumber();
         return $this->diceRoll;

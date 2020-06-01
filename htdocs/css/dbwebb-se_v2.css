@@ -5894,6 +5894,9 @@ hr::after {
 img {
   max-width: 100%;
 }
+.histogram_container {
+  border: solid 2px;
+}
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.

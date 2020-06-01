@@ -10,7 +10,7 @@ $saveButton = $gameHandler->saveButton();
 <h2>" <?= $playerTurn ?> "</h2>
 <h3>Player One Score: | <?= $playerOneTotalSum ?> | -- VS -- Computer Score: | <?= $playerTwoTotalSum ?> | </h3>
 <p>The rolls are: <?= $output ?></p>
-<p>Sum: <?= $currentSum ?><?= $checkForOnes ?></p>
+<p>Sum: <?= $currentSum ?> </p>
 <form method="post">
     <input type="submit" name="rollAgain" value="Roll">
     <?= $saveButton ?>

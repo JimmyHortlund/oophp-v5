@@ -19,3 +19,80 @@
 body {
     background-color: rgb(255, 244, 233);
 }
+
+.histogram_container {
+    width: 31%;
+    float: right;
+    margin-right: 1rem;
+}
+
+.rollAgainButton {
+    background: linear-gradient( rgb(94, 217, 255) 0%, rgb(171, 241, 253) 35%, rgb(238, 252, 255) 100%);
+    animation-name: spin;
+}
+
+.rollAgainButton:focus {
+    animation: spin 0.3s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.destroyButton {
+    background: linear-gradient( rgb(255, 125, 125) 0%, rgb(255, 165, 165) 35%, rgb(255, 238, 238) 100%);
+}
+
+.destroyButton:hover {
+    background: none;
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {background-color: rgb(255, 125, 125);}
+    to {background-color: rgb(255, 196, 196);}
+}
+
+.saveButton {
+    background: linear-gradient( rgb(179, 209, 177) 0%, rgb(181, 238, 174) 35%, rgb(240, 250, 241) 100%);
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.button {
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.badNumber {
+    background-color: rgb(255, 196, 196);
+    padding-left: 5px;
+}
+
+.goodNumber {
+    background-color: rgb(205, 233, 203);
+    margin-top: 5px;
+    padding-left: 5px;
+}

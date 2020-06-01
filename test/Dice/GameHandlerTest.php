@@ -15,7 +15,7 @@ class GameHandlerTest extends TestCase
         $this->assertInstanceOf("\Jiho\Dice\GameHandler", $gameHandler);
 
         $res = $gameHandler->checkForOnes(1);
-        $exp = "You rolled a ' 1 ' and lost this turns points";
+        $exp = true;
 
         $this->assertEquals($exp, $res);
     }

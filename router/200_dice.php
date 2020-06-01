@@ -8,7 +8,6 @@ namespace Jiho\Dice;
 $app->router->get("dice/init", function () use ($app) {
     
     $_SESSION["playerTurn"] = "Player One";
-    $_SESSION["checkForOnes"] = "";
     $_SESSION["saved"] = true;
     
     // $gameHandler->destroy();
@@ -27,15 +26,13 @@ $app->router->get("dice/play_dice", function () use ($app) {
     $currentSum = $_SESSION["currentSum"] ?? null;
     $playerOneTotalSum = $_SESSION["playerOneTotalSum"] ?? null;
     $playerTwoTotalSum = $_SESSION["playerTwoTotalSum"] ?? null;
-    $checkForOnes = $_SESSION["checkForOnes"] ?? null;
 
     $data = [
         "output" => $output,
         "playerTurn" => $playerTurn,
         "currentSum" => $currentSum,
         "playerOneTotalSum" => $playerOneTotalSum,
-        "playerTwoTotalSum" => $playerTwoTotalSum,
-        "checkForOnes" => $checkForOnes
+        "playerTwoTotalSum" => $playerTwoTotalSum
     ];
 
     $app->page->add("dice/play_dice", $data);
@@ -73,10 +70,10 @@ $app->router->post("dice/play_dice", function () use ($app) {
         $output = substr($hand->getOutput(), 0, -2);
         $gameHandler->setCurrentSum($hand->getSum());
 
-        if ($_SESSION["checkForOnes"] = $gameHandler->checkForOnes($output)) {
+        if ($gameHandler->checkForOnes($output) === true) {
             $_SESSION["saved"] = true;
             $_SESSION["playerTurn"] = $gameHandler->getPlayerTurn($_SESSION["playerTurn"]);
-            $_SESSION["currentSum"] = "";
+            $_SESSION["currentSum"] = "You rolled a '1' and lost this turns points";
         } else {
                 $_SESSION["currentSum"] += $gameHandler->getCurrentSum();
         }

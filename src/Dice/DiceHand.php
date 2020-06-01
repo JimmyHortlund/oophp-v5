@@ -21,14 +21,14 @@ class DiceHand
     private $output;
     private $sum;
     private $average;
-    
+
 
     /**
      * Constructor to initiate the dicehand with a number of dices.
      *
      * @param int $numOfDices Number of dices to create, defaults to five.
      */
-    public function __construct($numOfDices = 6) 
+    public function __construct($numOfDices = 6)
     {
         $this->numOfDices = $numOfDices;
     }
@@ -38,11 +38,11 @@ class DiceHand
      * @param int number of dices
      * @return void.
      */
-    public function addDice($diceSides) 
+    public function addDice($diceSides)
     {
-        for ($i=0; $i < $this->numOfDices; $i++) { 
+        for ($i=0; $i < $this->numOfDices; $i++) {
             $this->dices[] = new Dice($diceSides);
-        } 
+        }
     }
 
     /**
@@ -52,18 +52,18 @@ class DiceHand
      * Also saves the sum of all rolls in @var int $sum
      * @return void.
      */
-    public function getDice() 
+    public function getDice()
     {
-        for ($i=0; $i < $this->numOfDices; $i++) { 
+        for ($i=0; $i < $this->numOfDices; $i++) {
             $this->output .= $this->dices[$i]->getRoll() . ", ";
-        } 
+        }
     }
 
     /**
      * returns the string with all rolls
      * @return int $output
      */
-    public function getOutput() 
+    public function getOutput()
     {
         return $this->output;
     }
@@ -72,7 +72,7 @@ class DiceHand
      * returns the sum of all the dicerolls
      * @return int $sum as the sum
      */
-    public function getSum() 
+    public function getSum()
     {
         $sumArray = explode(",", $this->output);
         foreach ($sumArray as $value) {
@@ -85,8 +85,8 @@ class DiceHand
      * returns the average of all the dicerolls
      * @return int $average as average sum
      */
-    public function getAverage() 
+    public function getAverage()
     {
-        return $this->average = $this->sum / $this->numOfDices;  
+        return $this->average = $this->sum / $this->numOfDices;
     }
-}  
+}

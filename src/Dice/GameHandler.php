@@ -3,26 +3,40 @@
 
 namespace Jiho\Dice;
 
-class GameHandler
+class GameHandler implements HistogramInterface
 {
-
+    use HistogramTrait;
     private $currentSum;
+    private $serie = [];
+
+    /**
+     * Inject the object to use as base for the histogram data.
+     *
+     * @param HistogramInterface $object The object holding the serie.
+     *
+     * @return void.
+     */
+    public function getHistogramSerie($serie)
+    {
+        $this->serie = $serie;
+        $this->setHistogramSerie($this->serie ?? null);
+    }
 
     /**
      * Checks if the dicerolls contains a ' 1 '
      * if yes, change player, set player sum to ' 0 '
      * if no, add the sum to playerSum
      */
-    
-    public function checkForOnes($diceRolls) 
+
+    public function checkForOnes($diceRolls)
     {
         if (strpos($diceRolls, '1') !== false) {
-            return "You rolled a ' 1 ' and lost this turns points";
-        }  
+            return true;
+        }
     }
 
     // returns the player who is playing
-    public function getPlayerTurn($player) 
+    public function getPlayerTurn($player)
     {
         if ($player == "Player One") {
             return "Computer";
@@ -31,27 +45,41 @@ class GameHandler
         }
     }
 
+    public function computerAI($playerTurn, $currentSum, $playerOneTotalSum, $playerTwoTotalSum)
+    {
+        if ($playerTurn == "Player One"  || $currentSum == "You rolled a '1' and lost this turns points") {
+            return "";
+        } else {
+            if ($playerOneTotalSum > $playerTwoTotalSum && $currentSum < 12) {
+                return "ROLL!!!";
+            } else {
+                return "SAVE!!!!";
+            }
+        }
+    }
+
     //set and get player one sum for current session
-    public function setCurrentSum($sum) 
+    public function setCurrentSum($sum)
     {
         $this->currentSum = $sum;
     }
-    public function getCurrentSum() 
+    public function getCurrentSum()
     {
         return $this->currentSum;
     }
 
-    public function saveButton() 
+    public function saveButton()
     {
         if ($_SESSION["saved"] == true) {
             return "";
         } else {
-            return "<input type='submit' name='save' value='Save'>";
+            return "<input type='submit' class='saveButton button' name='save' value='Save'>";
         }
     }
 
+
     //destroys session
-    public function destroy() 
+    public function destroy()
     {
         echo "destroying session";
         // Unset all of the session variables.
@@ -70,7 +98,7 @@ class GameHandler
                 $params["secure"],
                 $params["httponly"]
             );
-        }       
+        }
 
         // Finally, destroy the session.
         session_destroy();
