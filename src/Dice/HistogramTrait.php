@@ -26,6 +26,11 @@ trait HistogramTrait
         return $this->histogramPlayerOne;
     }
 
+    public function getResultString()
+    {
+        return $this->resultString;
+    }
+
     public function getHistogramPlayerTwo()
     {
         return $this->histogramPlayerTwo;

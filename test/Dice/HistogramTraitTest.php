@@ -39,4 +39,15 @@ class HistogramTraitTest extends TestCase
         $res = $gameHandler->getCurrentHistogram();
         $this->assertEmpty($res);
     }
+
+    public function testResultString()
+    {
+        $gameHandler = new GameHandler();
+        $gameHandler->setHistogramSerie("1, 3, 4");
+        $res = $gameHandler->getResultString();
+        $exp = "1, 3, 4";
+        $this->assertEquals($res, $exp);
+
+    }
+
 }
